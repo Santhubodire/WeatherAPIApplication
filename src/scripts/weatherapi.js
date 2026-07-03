@@ -52,7 +52,7 @@ function getData(city){
             <span class="fs-2 fw-bold"> ${cityName}</span>
         </div>
         <div class="my-2 d-flex flex-row justify-content-center">
-            <img src="../public/images/${weatherImage}.png" width="40px" height="40px" style="background-color:#C2C2C2" class="me-3">
+            <img src="public/images/${weatherImage}.png" width="40px" height="40px" style="background-color:#C2C2C2" class="me-3">
             <span class="fs-2 fw-bold ms-3"> ${temperature}&deg C</span>
         </div>
         `;
