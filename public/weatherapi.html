@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/scripts/weatherapi.js"></script>
+</head>
+<body class="container-fluid d-flex flex-column align-items-center" onload="getData('Hyderabad')">
+    <!-- 27c33796bbe9ba8bcc2c42c96105c762 -->
+     <div class="w-100 text-center">
+
+         <header>
+            <div id="weather-heading">
+                <span class="bi bi-cloud-sun fs-1"></span>
+                <span class="fs-1 fw-bold mx-2">Weather App</span>
+            </div>
+            <div id="title-description">
+                <p class="fs-6 my-1" style="color:rgb(79, 78, 78)">Get current weather details of any city</p>
+            </div>
+         </header>
+         <main class="my-4 mx-3 d-flex flex-column align-items-center">
+            <div>
+                <div class="input-group">
+                    <span class="bi bi-search input-group-text"></span>
+                    <input type="text" class="form-control city" placeholder="Enter city name">
+                    <button class="btn btn-primary input-group-text ms-2 rounded" onclick="searchCity()">Search</button>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="fs-6 fw-bolder my-2 text-start">
+                    Popular Cities
+                </div>
+                <div class="form-control d-flex align-items-center">
+                    <select class="form-select" id="selectCity">
+                        <option>Select a city</option>
+                        <option selected>Hyderabad</option>
+                        <option>Delhi</option>
+                        <option>Mumbai</option>
+                        <option>Bangalore</option>
+                        <option>Kolkata</option>
+                    </select>
+                    <button class="btn btn-primary h-25 mx-3" onclick="selectedCity()">Fetch</button>
+                </div>
+            </div>
+         </main>
+         <section class="container-fluid">
+    
+         </section>
+         <footer class="my-3">
+            Developed By <span class="text-primary">Santhosh Bodire</span>
+         </footer>
+     </div>
+</body>
+</html>
